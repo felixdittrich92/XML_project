@@ -1,7 +1,7 @@
 import pandas as pd
 from dicttoxml import dicttoxml
 
-data = pd.read_csv('data/weather.csv', sep='\s+')
+data = pd.read_csv('data/one_day.csv', sep='\s+')
 df = pd.DataFrame(data, columns=data.keys())
 
 data_dict = df.to_dict(orient="records")
