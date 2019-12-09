@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weather_data>
+   <observation>
+       <date>
+           .....
+       </date>
+       <temperature>
+           .....
+           <infrared_surface_temperature>
+               .......
+           </infrared_surface_temperature>
+           <soil_temperature>
+               .......
+           </soil_temperature>
+       </temperature>
+       <solar_radiation>
+           ........
+       </solar_radiation>
+       <humidity>
+           <air_humidity>
+               .........
+           </air_humidity>
+           <earth_humidity>
+               .........
+           </earth_humidity>
+       </humidity>
+   </observation>
+</weather_data>

@@ -1,12 +1,7 @@
 import pandas as pd
 
+# clean data and change separator
 data = pd.read_csv('data/weather.csv', sep='\s+')
-data = data.drop(['SOIL_TEMP_20', 'SOIL_MOISTURE_100', 'SOIL_MOISTURE_50', 'SOIL_MOISTURE_20'], axis = 1)
-data = data.drop(data.index[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]], axis=0)
-#print(data.head(24))
-for i in range(47, 100):
-    data = data.drop(data.index[[i]], axis=0)
-
-print(data.head(50))
-
-export_csv = data.to_csv ('out.csv', index = None)
+data = data.drop(['WBANNO', 'CRX_VN', 'LONGITUDE', 'LATITUDE', 'P_CALC', 'SOLARAD_FLAG', 'SOLARAD_MAX_FLAG', 'SOLARAD_MIN_FLAG', 'SUR_TEMP_TYPE', 'SUR_TEMP_FLAG', 'SUR_TEMP_MAX_FLAG', 'SUR_TEMP_MIN_FLAG', 'RH_HR_AVG_FLAG', 'SOIL_MOISTURE_20', 'SOIL_MOISTURE_50', 'SOIL_MOISTURE_100', 'SOIL_TEMP_20'], axis = 1)
+print(data.head())
+data.to_csv('data/weather_modified.csv', sep=',', index=False, header=None)

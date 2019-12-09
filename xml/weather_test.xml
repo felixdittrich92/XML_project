@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weather_data SYSTEM "schema.dtd">
+<weather_data>
+   <observation>
+       <date>
+           <UTC_DATE>20180101</UTC_DATE>
+           <UTC_TIME>100</UTC_TIME>
+           <LST_DATE>20171231</LST_DATE>
+           <LST_TIME>1900</LST_TIME>
+       </date>
+       <temperature>
+           <T_CALC>-9.9</T_CALC>
+           <T_HR_AVG>-9.9</T_HR_AVG>
+           <T_MAX>-9.6</T_MAX>
+           <T_MIN>-10.3</T_MIN>
+           <infrared_surface_temperature>
+               <SUR_TEMP>-10.1</SUR_TEMP>
+               <SUR_TEMP_MAX>-8.8</SUR_TEMP_MAX>
+               <SUR_TEMP_MIN>-11.0</SUR_TEMP_MIN>
+           </infrared_surface_temperature>
+           <soil_temperature>
+               <SOIL_TEMP_5>1.1</SOIL_TEMP_5>
+               <SOIL_TEMP_10>1.9</SOIL_TEMP_10>
+               <SOIL_TEMP_50>7.1</SOIL_TEMP_50>
+               <SOIL_TEMP_100>9.4</SOIL_TEMP_100>
+           </soil_temperature>
+       </temperature>
+       <solar_radiation>
+           <SOLARAD>0</SOLARAD>
+           <SOLARAD_MAX>0</SOLARAD_MAX>
+           <SOLARAD_MIN>0</SOLARAD_MIN>
+       </solar_radiation>
+       <humidity>
+           <air_humidity>
+               <RH_HR_AVG>51</RH_HR_AVG>
+           </air_humidity>
+           <earth_humidity>
+               <SOIL_MOISTURE_5>0.315</SOIL_MOISTURE_5>
+               <SOIL_MOISTURE_10>0.32299999999999995</SOIL_MOISTURE_10>
+           </earth_humidity>
+       </humidity>
+   </observation>
+</weather_data>
