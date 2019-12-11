@@ -1,0 +1,38 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ausleihen" type="AusleihenType"/>
+  <xs:complexType name="AdresseType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="Strasse"/>
+      <xs:element type="xs:string" name="Ort"/>
+      <xs:element type="xs:short" name="PLZ"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BuchType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Titel"/>
+      <xs:element type="xs:string" name="Autor"/>
+      <xs:element type="xs:byte" name="Bestand"/>
+      <xs:element type="xs:float" name="WertEUR"/>
+    </xs:sequence>
+    <xs:attribute type="xs:long" name="KatalogNr" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AusgeliehenType">
+    <xs:sequence>
+      <xs:element type="BuchType" name="Buch"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AusleihvorgangType">
+    <xs:sequence>
+      <xs:element type="AdresseType" name="Adresse"/>
+      <xs:element type="AusgeliehenType" name="Ausgeliehen"/>
+    </xs:sequence>
+    <xs:attribute type="xs:date" name="bestelldatum" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AusleihenType">
+    <xs:sequence>
+      <xs:element type="AusleihvorgangType" name="Ausleihvorgang" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

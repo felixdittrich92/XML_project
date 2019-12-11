@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<Ausleihen>
+  <Ausleihvorgang bestelldatum="2019-04-21">
+    <Adresse>
+        <Name>Walter Grothendieck</Name>
+        <Strasse>Universumallee 13</Strasse>
+        <Ort>Leipzig</Ort>
+        <PLZ>04109</PLZ>
+    </Adresse>
+    <Ausgeliehen>
+        <Buch KatalogNr="3453865219">
+          <Titel>Wolfsmond. Der dunkle Turm.</Titel>
+          <Autor>Stephen King</Autor>
+          <Bestand>1</Bestand>
+          <WertEUR>15.00</WertEUR>
+        </Buch>
+    </Ausgeliehen>
+  </Ausleihvorgang>
+  <Ausleihvorgang bestelldatum="2019-04-22">   
+    <Adresse>
+        <Name>Wolfgang Blumenmond</Name>
+        <Strasse>Sonnenweg 13</Strasse>
+        <Ort>Leipzig</Ort>
+        <PLZ>04318</PLZ>
+    </Adresse>
+    <Ausgeliehen>
+        <Buch KatalogNr="8395318760">
+          <Titel>The Murder on the Links</Titel>
+          <Autor>Agatha Christie</Autor>
+          <Bestand>1</Bestand>
+          <WertEUR>10.00</WertEUR>
+        </Buch>
+    </Ausgeliehen>
+  </Ausleihvorgang>
+</Ausleihen>

@@ -1,0 +1,46 @@
+﻿
+Zulassungsaufgaben im Modul „Dokumentbeschreibungssprachen“ 2019
+
+Aufgabe 1:
+Eine DTD ist in der Regel dazu da, die Reihenfolge der Unterelemente zusammen mit ihren zugelassenen Häufigkeiten festzulegen. Bei vielen Elementen von HTML ist es hingegen wichtig, die Unterelemente in beliebiger Reihenfolge und mit beliebiger Häufigkeit sich abwechseln zu lassen. Wie kann man das mit Hilfe einer DTD zulassen?
+
+Antwort: 
+
+Durch Zusatzelemente:
+
+Bsp.:
+<!ELEMENT Buch (Titel,Autor+,Zusatz*,Jahr,Verlag?,Preis?)>
+<!ELEMENT Buch (Titel, Preis, Jahr)*>
+
+Ohne Zusatz = Pflichtelement, genau einmal
+Zusatz „+“ = Pflichtelement, ein- oder mehrmals
+Zusatz „ * “ = Wahlelement, null-, ein-, mehrmals
+Zusatz „?“ = Wahlelement, null- oder einmal
+
+alternativ durch XOR ( | ) als Auswahlmöglichkeit
+
+
+Sie wollen mit Hilfe einer Festlegung in der DTD eines XML-Dokuments erzwingen, dass zwei Unterelemente eines Elements immer nur paarweise auftreten können, aber in beliebiger Reihenfolge der beiden Unterelemente und als Paar beliebig oft. Wie sieht die Anweisung in der DTD aus?
+
+Antwort:
+
+	<!ELEMENT telefonnummer ((vorwahlnummer , durchwahlnummer) | (durchwahlnummer, vorwahlnummer))*>
+	<!ELEMENT vorwahlnummer (#PCDATA)>
+	<!ELEMENT durchwahlnummer (#PCDATA)>
+
+
+Aufgabe 2:
+Erstellen Sie zur Datei Aufgabe2.xml zwei XSLT-Dateien, die die Daten als nicht nummerierte Liste in HTML ausgeben und nach den Erstautoren/ nach den Erscheinungsjahren sortieren.
+
+Aufgabe 3: 
+Erstellen Sie für das vorgegebene XML-Dokument Aufgabe3.xml je eine XML-Schema Definition in zwei der Ihnen durch die Vorlesung bekannten Designs. 
+
+Prüfen Sie das jeweils entsprechend mit der nötigen Kopfzeile ergänzte XML-Dokument mit Ihren XSDs auf Wohlgeformtheit und Gültigkeit. 
+
+Die Dateien (2x angepasstes XML-Dokument mit je einer XSD) können Sie als eine ZIP- oder RAR-Datei per E-Mail einreichen. Ausdrucke werden auch entgegengenommen, können jedoch nicht so effektiv geprüft werden. Die Dateinamen sollten Ihren Namen beinhalten.
+--------------------------------------------------------------
+
+Einzureichen in der zweiten Januarwoche 2020.
+
+Viel Erfolg – Prof. Dr. Michael Frank.
+

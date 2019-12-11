@@ -1,0 +1,6 @@
+Aufgabe 1: Aufgabe1_FelixDittrich.txt
+
+Aufgabe 2: buecherxsl4.xsl und Aufgabe2_FelixDittrich.html zum testen die .xsl deckt beide gewollten Tabellen ab
+
+Aufgabe 3: russiandoll_FelixDittrich.xsd / venetianblind_FelixDittrich.xsd und valid.py (benötigt Python3) 
+valid.py : validiert die beiden Schemas (.xsd) auf Korrektheit mit der Aufgabe3.xml

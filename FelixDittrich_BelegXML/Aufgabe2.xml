@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--  buecherxsl1.xml -->
+<?xml-stylesheet type="text/xsl" href="buecherxsl4.xsl"?>
+<Buecher>
+	<Buch Sprache="Deutsch" Zusatz="CD">
+		<Titel>XML</Titel>
+		<Autoren>
+			<Autor>Kobert</Autor>
+		</Autoren>
+		<Jahr>1999</Jahr>
+		<Verlag>bhv</Verlag>
+		<Preis Waehrung="DM">29,90</Preis>
+	</Buch>
+	<Buch Sprache="Deutsch" Zusatz="CD">
+		<Titel>XML in Action</Titel>
+		<Autoren>
+			<Autor>Pardi</Autor>
+		</Autoren>
+		<Jahr>1999</Jahr>
+		<Verlag>Microsoft Press</Verlag>
+		<Preis Waehrung="DM">79,00</Preis>
+	</Buch>
+	<Buch Sprache="Deutsch" Zusatz="CD">
+		<Titel>XML fuer Dummies</Titel>
+		<Autoren>
+			<Autor>Tittel</Autor>
+			<Autor>Mikula</Autor>
+			<Autor>Chandak</Autor>
+		</Autoren>
+		<Jahr>2000</Jahr>
+		<Verlag>MITP</Verlag>
+		<Preis>-</Preis>
+	</Buch>
+	<Buch Sprache="Deutsch" Zusatz="CD+Referenz">
+		<Titel>XML</Titel>
+		<Autoren>
+			<Autor>Gulbransen</Autor>
+		</Autoren>
+		<Jahr>2000</Jahr>
+		<Verlag>Que</Verlag>
+		<Preis>-</Preis>
+	</Buch>
+	<Buch Sprache="Englisch" Zusatz="CD">
+		<Titel>XML Step by Step</Titel>
+		<Autoren>
+			<Autor>Young</Autor>
+		</Autoren>
+		<Jahr>2000</Jahr>
+		<Preis>-</Preis>
+	</Buch>
+		<Buch Sprache="Deutsch" Zusatz="CD">
+		<Titel>XML fuer Anfaenger</Titel>
+		<Autoren>
+			<Autor>Erlenkoetter</Autor>
+		</Autoren>
+		<Jahr>2002</Jahr>
+		<Preis>-</Preis>
+	</Buch>
+</Buecher>
