@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="weather_data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="observation"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="observation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="date"/>
+        <xs:element ref="temperature"/>
+        <xs:element ref="solar_radiation"/>
+        <xs:element ref="humidity"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="UTC_DATE"/>
+        <xs:element ref="UTC_TIME"/>
+        <xs:element ref="LST_DATE"/>
+        <xs:element ref="LST_TIME"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UTC_DATE" type="xs:integer"/>
+  <xs:element name="UTC_TIME" type="xs:integer"/>
+  <xs:element name="LST_DATE" type="xs:integer"/>
+  <xs:element name="LST_TIME" type="xs:integer"/>
+  <xs:element name="temperature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="T_CALC"/>
+        <xs:element ref="T_HR_AVG"/>
+        <xs:element ref="T_MAX"/>
+        <xs:element ref="T_MIN"/>
+        <xs:element ref="infrared_surface_temperature"/>
+        <xs:element ref="soil_temperature"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="T_CALC" type="xs:decimal"/>
+  <xs:element name="T_HR_AVG" type="xs:decimal"/>
+  <xs:element name="T_MAX" type="xs:decimal"/>
+  <xs:element name="T_MIN" type="xs:decimal"/>
+  <xs:element name="infrared_surface_temperature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SUR_TEMP"/>
+        <xs:element ref="SUR_TEMP_MAX"/>
+        <xs:element ref="SUR_TEMP_MIN"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SUR_TEMP" type="xs:decimal"/>
+  <xs:element name="SUR_TEMP_MAX" type="xs:decimal"/>
+  <xs:element name="SUR_TEMP_MIN" type="xs:decimal"/>
+  <xs:element name="soil_temperature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SOIL_TEMP_5"/>
+        <xs:element ref="SOIL_TEMP_10"/>
+        <xs:element ref="SOIL_TEMP_50"/>
+        <xs:element ref="SOIL_TEMP_100"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SOIL_TEMP_5" type="xs:decimal"/>
+  <xs:element name="SOIL_TEMP_10" type="xs:decimal"/>
+  <xs:element name="SOIL_TEMP_50" type="xs:decimal"/>
+  <xs:element name="SOIL_TEMP_100" type="xs:decimal"/>
+  <xs:element name="solar_radiation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SOLARAD"/>
+        <xs:element ref="SOLARAD_MAX"/>
+        <xs:element ref="SOLARAD_MIN"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SOLARAD" type="xs:integer"/>
+  <xs:element name="SOLARAD_MAX" type="xs:integer"/>
+  <xs:element name="SOLARAD_MIN" type="xs:integer"/>
+  <xs:element name="humidity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="air_humidity"/>
+        <xs:element ref="earth_humidity"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="air_humidity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RH_HR_AVG"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RH_HR_AVG" type="xs:integer"/>
+  <xs:element name="earth_humidity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SOIL_MOISTURE_5"/>
+        <xs:element ref="SOIL_MOISTURE_10"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SOIL_MOISTURE_5" type="xs:decimal"/>
+  <xs:element name="SOIL_MOISTURE_10" type="xs:decimal"/>
+</xs:schema>

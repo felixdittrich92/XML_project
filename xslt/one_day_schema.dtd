@@ -1,0 +1,128 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT weather_data (observation)+>
+<!ATTLIST weather_data
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT observation (date,temperature,solar_radiation,humidity)>
+<!ATTLIST observation
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT date (UTC_DATE,UTC_TIME,LST_DATE,LST_TIME)>
+<!ATTLIST date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT temperature (T_CALC,T_HR_AVG,T_MAX,T_MIN,
+                       infrared_surface_temperature,soil_temperature)>
+<!ATTLIST temperature
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT solar_radiation (SOLARAD,SOLARAD_MAX,SOLARAD_MIN)>
+<!ATTLIST solar_radiation
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT humidity (air_humidity,earth_humidity)>
+<!ATTLIST humidity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT UTC_DATE (#PCDATA)>
+<!ATTLIST UTC_DATE
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT UTC_TIME (#PCDATA)>
+<!ATTLIST UTC_TIME
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT LST_DATE (#PCDATA)>
+<!ATTLIST LST_DATE
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT LST_TIME (#PCDATA)>
+<!ATTLIST LST_TIME
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT T_CALC (#PCDATA)>
+<!ATTLIST T_CALC
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT T_HR_AVG (#PCDATA)>
+<!ATTLIST T_HR_AVG
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT T_MAX (#PCDATA)>
+<!ATTLIST T_MAX
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT T_MIN (#PCDATA)>
+<!ATTLIST T_MIN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT infrared_surface_temperature (SUR_TEMP,SUR_TEMP_MAX,
+                                        SUR_TEMP_MIN)>
+<!ATTLIST infrared_surface_temperature
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT soil_temperature (SOIL_TEMP_5,SOIL_TEMP_10,SOIL_TEMP_50,
+                            SOIL_TEMP_100)>
+<!ATTLIST soil_temperature
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOLARAD (#PCDATA)>
+<!ATTLIST SOLARAD
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOLARAD_MAX (#PCDATA)>
+<!ATTLIST SOLARAD_MAX
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOLARAD_MIN (#PCDATA)>
+<!ATTLIST SOLARAD_MIN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT air_humidity (RH_HR_AVG)>
+<!ATTLIST air_humidity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT earth_humidity (SOIL_MOISTURE_5,SOIL_MOISTURE_10)>
+<!ATTLIST earth_humidity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SUR_TEMP (#PCDATA)>
+<!ATTLIST SUR_TEMP
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SUR_TEMP_MAX (#PCDATA)>
+<!ATTLIST SUR_TEMP_MAX
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SUR_TEMP_MIN (#PCDATA)>
+<!ATTLIST SUR_TEMP_MIN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_TEMP_5 (#PCDATA)>
+<!ATTLIST SOIL_TEMP_5
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_TEMP_10 (#PCDATA)>
+<!ATTLIST SOIL_TEMP_10
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_TEMP_50 (#PCDATA)>
+<!ATTLIST SOIL_TEMP_50
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_TEMP_100 (#PCDATA)>
+<!ATTLIST SOIL_TEMP_100
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT RH_HR_AVG (#PCDATA)>
+<!ATTLIST RH_HR_AVG
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_MOISTURE_5 (#PCDATA)>
+<!ATTLIST SOIL_MOISTURE_5
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SOIL_MOISTURE_10 (#PCDATA)>
+<!ATTLIST SOIL_MOISTURE_10
+  xmlns CDATA #FIXED ''>
