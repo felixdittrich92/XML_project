@@ -26,5 +26,5 @@ else:
 
 # validate DTD and part from XML
 parser = etree.XMLParser(dtd_validation=True)
-tree = etree.parse("xml/one_day.xml", parser)
+tree = etree.parse("Abgabe/weather_dtd.xml", parser)
 print('.dtd and .xml are valid !!')
