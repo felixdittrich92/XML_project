@@ -3,8 +3,6 @@
 <weather_data>
    <observation>
        <date>
-           <UTC_DATE>20180101</UTC_DATE>
-           <UTC_TIME>100</UTC_TIME>
            <LST_DATE>20171231</LST_DATE>
            <LST_TIME>1900</LST_TIME>
        </date>
@@ -21,8 +19,6 @@
            <soil_temperature>
                <SOIL_TEMP_5>1.1</SOIL_TEMP_5>
                <SOIL_TEMP_10>1.9</SOIL_TEMP_10>
-               <SOIL_TEMP_50>7.1</SOIL_TEMP_50>
-               <SOIL_TEMP_100>9.4</SOIL_TEMP_100>
            </soil_temperature>
        </temperature>
        <solar_radiation>

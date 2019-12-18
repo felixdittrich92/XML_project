@@ -8,7 +8,7 @@
 <!ATTLIST observation
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT date (UTC_DATE,UTC_TIME,LST_DATE,LST_TIME)>
+<!ELEMENT date (LST_DATE,LST_TIME)>
 <!ATTLIST date
   xmlns CDATA #FIXED ''>
 
@@ -23,14 +23,6 @@
 
 <!ELEMENT humidity (air_humidity,earth_humidity)>
 <!ATTLIST humidity
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT UTC_DATE (#PCDATA)>
-<!ATTLIST UTC_DATE
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT UTC_TIME (#PCDATA)>
-<!ATTLIST UTC_TIME
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT LST_DATE (#PCDATA)>
@@ -62,8 +54,7 @@
 <!ATTLIST infrared_surface_temperature
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT soil_temperature (SOIL_TEMP_5,SOIL_TEMP_10,SOIL_TEMP_50,
-                            SOIL_TEMP_100)>
+<!ELEMENT soil_temperature (SOIL_TEMP_5,SOIL_TEMP_10)>
 <!ATTLIST soil_temperature
   xmlns CDATA #FIXED ''>
 
@@ -105,14 +96,6 @@
 
 <!ELEMENT SOIL_TEMP_10 (#PCDATA)>
 <!ATTLIST SOIL_TEMP_10
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT SOIL_TEMP_50 (#PCDATA)>
-<!ATTLIST SOIL_TEMP_50
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT SOIL_TEMP_100 (#PCDATA)>
-<!ATTLIST SOIL_TEMP_100
   xmlns CDATA #FIXED ''>
 
 <!ELEMENT RH_HR_AVG (#PCDATA)>
