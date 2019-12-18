@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD erstellt mit XMLSpy v2013 sp1 (http://www.altova.com)-->
+<!ELEMENT weather_data (observation+)>
+<!ELEMENT temperature (T_CALC, T_HR_AVG, T_MAX, T_MIN, infrared_surface_temperature, soil_temperature)>
+<!ELEMENT solar_radiation (SOLARAD, SOLARAD_MAX, SOLARAD_MIN)>
+<!ELEMENT soil_temperature (SOIL_TEMP_5, SOIL_TEMP_10)>
+<!ELEMENT observation (date, temperature, solar_radiation, humidity)>
+<!ELEMENT infrared_surface_temperature (SUR_TEMP, SUR_TEMP_MAX, SUR_TEMP_MIN)>
+<!ELEMENT humidity (air_humidity, earth_humidity)>
+<!ELEMENT earth_humidity (SOIL_MOISTURE_5, SOIL_MOISTURE_10)>
+<!ELEMENT date (LST_DATE, LST_TIME)>
+<!ELEMENT air_humidity (RH_HR_AVG)>
+<!ELEMENT T_MIN (#PCDATA)>
+<!ELEMENT T_MAX (#PCDATA)>
+<!ELEMENT T_HR_AVG (#PCDATA)>
+<!ELEMENT T_CALC (#PCDATA)>
+<!ELEMENT SUR_TEMP_MIN (#PCDATA)>
+<!ELEMENT SUR_TEMP_MAX (#PCDATA)>
+<!ELEMENT SUR_TEMP (#PCDATA)>
+<!ELEMENT SOLARAD_MIN (#PCDATA)>
+<!ELEMENT SOLARAD_MAX (#PCDATA)>
+<!ELEMENT SOLARAD (#PCDATA)>
+<!ELEMENT SOIL_TEMP_5 (#PCDATA)>
+<!ELEMENT SOIL_TEMP_10 (#PCDATA)>
+<!ELEMENT SOIL_MOISTURE_5 (#PCDATA)>
+<!ELEMENT SOIL_MOISTURE_10 (#PCDATA)>
+<!ELEMENT RH_HR_AVG (#PCDATA)>
+<!ELEMENT LST_TIME (#PCDATA)>
+<!ELEMENT LST_DATE (#PCDATA)>
