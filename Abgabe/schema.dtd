@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE weather_data SYSTEM "schema.dtd">
 <!ELEMENT weather_data (observation+)>
 <!ELEMENT temperature (T_CALC, T_HR_AVG, T_MAX, T_MIN, infrared_surface_temperature, soil_temperature)>
 <!ELEMENT solar_radiation (SOLARAD, SOLARAD_MAX, SOLARAD_MIN)>
