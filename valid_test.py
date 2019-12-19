@@ -17,8 +17,8 @@ print('.dtd and .xml are valid !!')
 """
 
 # validate XSD and part from XML
-my_schema = xmlschema.XMLSchema('xml/schema.xsd')
-answer = my_schema.is_valid('xml/one_day.xml')
+my_schema = xmlschema.XMLSchema('Abgabe/schema.xsd')
+answer = my_schema.is_valid('Abgabe/weather_xsd.xml')
 if answer is True:
     print('.xsd and .xml are valid !!')
 else:
