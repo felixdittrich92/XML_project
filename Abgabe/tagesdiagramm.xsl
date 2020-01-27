@@ -30,7 +30,7 @@
 							</xsl:choose>
 						</xsl:variable>"
 						<xsl:variable name="y">
-						<xsl:choose>
+							<xsl:choose>
 								<xsl:when test="$value &gt; 0">
 									<xsl:value-of select="($offset)-($rectHeight)"/>
 								</xsl:when>
@@ -44,11 +44,8 @@
 						<xsl:variable name="i" select="position()"/>
 						<!--text x="{$x}" y="{($y)-5}"><xsl:value-of select="."/></text-->
 					</xsl:for-each>
-					<xsl:apply-templates select="coordinatesEnd"/>
 				</svg>
 			</body>
 		</html>
-	</xsl:template>
-	<xsl:template name="coordinates">
 	</xsl:template>
 </xsl:stylesheet>
