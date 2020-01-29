@@ -47,8 +47,7 @@
 						</xsl:variable>
 						<xsl:variable name="x" select="position()*($rectSpacing)"/>
 						<rect x="{$x}" y="{$y}" width="{($rectSpacing) div 2}" height="{$rectHeight}" fill="blue" stroke="blue"/>
-						<xsl:variable name="i" select="position()"/>
-						<!--text x="{$x}" y="{($y)-5}"><xsl:value-of select="."/></text-->
+						<text x="{$x}" y="{($y+$rectHeight)+ 15}"><xsl:value-of select="temperature/T_MAX"/></text>
 					</xsl:for-each>
 				</svg>
 			</body>
