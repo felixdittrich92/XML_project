@@ -60,7 +60,6 @@
 								</xsl:variable>
 								<xsl:variable name="x" select="position()*($rectSpacing)"/>
 								<rect x="{$x}" y="{$y}" width="{($rectSpacing) div 2}" height="{$rectHeight}" fill="blue" stroke="{$color}"/>
-								<xsl:variable name="i" select="position()"/>
 							</xsl:if>
 						</xsl:for-each>
 					</g>
