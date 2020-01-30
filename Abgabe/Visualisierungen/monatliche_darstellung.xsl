@@ -12,6 +12,7 @@
 		<text y="200" x="0">0°C</text>
 			<g transform="translate(50 0)">
 				<line x1="0%" x2="100%" y2="300" y1="300" stroke="black" stroke-width="1"/>
+				<text x="680" y="340">Monat</text>
 				<line x1="0%" x2="100%" y2="200" y1="200" stroke="lightgray" stroke-width="1"/>
 				<line x1="0" x2="0" y2="0" y1="300" stroke="black" stroke-width="1"/>
 
