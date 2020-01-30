@@ -8,7 +8,7 @@
 				<title>Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky</title>
 			</head>
 			<body>
-		<svg  xmlns="http://www.w3.org/2000/svg" width="800" height="800" style="fill:gray;">
+		<svg  xmlns="http://www.w3.org/2000/svg" width="800" height="400" style="fill:gray;">
 		<text y="200" x="0">0°C</text>
 			<g transform="translate(50 0)">
 				<line x1="0%" x2="100%" y2="300" y1="300" stroke="black" stroke-width="1"/>
@@ -34,6 +34,10 @@
 				</xsl:for-each>
 			</g>
 		</svg>
+		<p>
+				Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky<br/>
+				Monatlich
+		</p>
 	</body>
  </html>
 	</xsl:template>

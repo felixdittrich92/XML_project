@@ -72,7 +72,8 @@
 					</g>
 				</svg>
 				<p>
-					Temperaturdaten vom 1.1.2018 aus Bowling Green, Kentucky
+					Temperaturdaten vom 1.1.2018 aus Bowling Green, Kentucky<br/>
+					stündliche Messwerte
 				</p>
 			</body>
 		</html>
