@@ -4,7 +4,7 @@
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-				<title/>
+				<title>Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky</title>
 			</head>
 			<body>
 				<!--Parameters-->
@@ -64,6 +64,10 @@
 						</xsl:for-each>
 					</g>
 				</svg>
+				<p>
+					Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky<br/>
+					Tägliche Messung 12:00
+				</p>
 			</body>
 		</html>
 	</xsl:template>
