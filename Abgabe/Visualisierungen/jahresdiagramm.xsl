@@ -28,7 +28,7 @@
 						<!--Axis-->
 						<line x1="0" x2="0" y1="0" y2="{$height}" stroke-width="1" stroke="black"/>
 						<line x1="0%" x2="{$width}" y1="{$offset}" y2="{$offset}" stroke-width="1" stroke="black"/>
-						<!--data plotting-->
+						<!--saeulendiagramm-->
 						<xsl:for-each select="weather_data/observation">
 							<xsl:variable name="color">
 								<xsl:choose>
@@ -63,6 +63,7 @@
 								<xsl:variable name="i" select="position()"/>
 							</xsl:if>
 						</xsl:for-each>
+						
 					</g>
 				</svg>
 			</body>
