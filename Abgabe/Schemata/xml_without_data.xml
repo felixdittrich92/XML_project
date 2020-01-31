@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weather_data>
+   <observation>
+       <date>
+           <LST_DATE>........</LST_DATE>
+           <LST_TIME>........</LST_TIME>
+       </date>
+       <temperature>
+           <T_CALC>........</T_CALC>
+           <T_HR_AVG>........</T_HR_AVG>
+           <T_MAX>.......</T_MAX>
+           <T_MIN>.........</T_MIN>
+           <infrared_surface_temperature>
+               <SUR_TEMP>........</SUR_TEMP>
+               <SUR_TEMP_MAX>.........</SUR_TEMP_MAX>
+               <SUR_TEMP_MIN>........</SUR_TEMP_MIN>
+           </infrared_surface_temperature>
+           <soil_temperature>
+               <SOIL_TEMP_5>.........</SOIL_TEMP_5>
+               <SOIL_TEMP_10>........</SOIL_TEMP_10>
+           </soil_temperature>
+       </temperature>
+       <solar_radiation>
+           <SOLARAD>........</SOLARAD>
+           <SOLARAD_MAX>........</SOLARAD_MAX>
+           <SOLARAD_MIN>.........</SOLARAD_MIN>
+       </solar_radiation>
+       <humidity>
+           <air_humidity>
+               <RH_HR_AVG>........</RH_HR_AVG>
+           </air_humidity>
+           <earth_humidity>
+               <SOIL_MOISTURE_5>.........</SOIL_MOISTURE_5>
+               <SOIL_MOISTURE_10>.........</SOIL_MOISTURE_10>
+           </earth_humidity>
+       </humidity>
+   </observation>
+</weather_data>

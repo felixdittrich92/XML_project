@@ -1,0 +1,69 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="weather_data" type="weather_dataType"/>
+	<xs:complexType name="dateType">
+		<xs:sequence>
+			<xs:element name="LST_DATE" type="xs:int"/>
+			<xs:element name="LST_TIME" type="xs:short"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="infrared_surface_temperatureType">
+		<xs:sequence>
+			<xs:element name="SUR_TEMP" type="xs:float"/>
+			<xs:element name="SUR_TEMP_MAX" type="xs:float"/>
+			<xs:element name="SUR_TEMP_MIN" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="soil_temperatureType">
+		<xs:sequence>
+			<xs:element name="SOIL_TEMP_5" type="xs:float"/>
+			<xs:element name="SOIL_TEMP_10" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="temperatureType">
+		<xs:sequence>
+			<xs:element name="T_CALC" type="xs:float"/>
+			<xs:element name="T_HR_AVG" type="xs:float"/>
+			<xs:element name="T_MAX" type="xs:float"/>
+			<xs:element name="T_MIN" type="xs:float"/>
+			<xs:element name="infrared_surface_temperature" type="infrared_surface_temperatureType"/>
+			<xs:element name="soil_temperature" type="soil_temperatureType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="solar_radiationType">
+		<xs:sequence>
+			<xs:element name="SOLARAD" type="xs:short"/>
+			<xs:element name="SOLARAD_MAX" type="xs:short"/>
+			<xs:element name="SOLARAD_MIN" type="xs:short"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="air_humidityType">
+		<xs:sequence>
+			<xs:element name="RH_HR_AVG" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="earth_humidityType">
+		<xs:sequence>
+			<xs:element name="SOIL_MOISTURE_5" type="xs:float"/>
+			<xs:element name="SOIL_MOISTURE_10" type="xs:float"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="humidityType">
+		<xs:sequence>
+			<xs:element name="air_humidity" type="air_humidityType"/>
+			<xs:element name="earth_humidity" type="earth_humidityType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="observationType">
+		<xs:sequence>
+			<xs:element name="date" type="dateType"/>
+			<xs:element name="temperature" type="temperatureType"/>
+			<xs:element name="solar_radiation" type="solar_radiationType"/>
+			<xs:element name="humidity" type="humidityType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="weather_dataType">
+		<xs:sequence>
+			<xs:element name="observation" type="observationType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
