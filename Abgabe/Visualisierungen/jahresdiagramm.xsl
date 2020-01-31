@@ -4,7 +4,7 @@
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-				<title/>
+				<title>Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky</title>
 			</head>
 			<body>
 				<!--Parameters-->
@@ -60,12 +60,15 @@
 								</xsl:variable>
 								<xsl:variable name="x" select="position()*($rectSpacing)"/>
 								<rect x="{$x}" y="{$y}" width="{($rectSpacing) div 2}" height="{$rectHeight}" fill="blue" stroke="{$color}"/>
-								<xsl:variable name="i" select="position()"/>
 							</xsl:if>
 						</xsl:for-each>
 						
 					</g>
 				</svg>
+				<p>
+					Temperaturverlauf des Jahres 2018 in Bowling Green, Kentucky<br/>
+					Tägliche Messung 12:00
+				</p>
 			</body>
 		</html>
 	</xsl:template>

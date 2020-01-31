@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/2000/svg">
 	<xsl:output method="xml" doctype-system="about:legacy-compat" omit-xml-declaration="yes" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,11 +8,12 @@
 			</head>
 			<body>
 				<xsl:variable name="height" select="400"/>
-				<xsl:variable name="width" select="900"/>
+				<xsl:variable name="width" select="1200"/>
 				<xsl:variable name="offset" select="($height div 4)*3"/>
 				<xsl:variable name="scale" select="5"/>
 				<svg xmlns="http://www.w3.org/2000/svg" width="{$width}" height="{$height}">
 					<!--Y-axis description-->
+					<text x="96%" y="280">Zeit</text>
 					<xsl:for-each select="weather_data/observation">
 						<xsl:if test="position() &lt; 11">
 							<xsl:variable name="x" select="5"/>
@@ -49,9 +50,19 @@
 								</xsl:choose>
 							</xsl:variable>
 							<xsl:variable name="x" select="position()*($rectSpacing)"/>
-							<!--nur für negative werte!-->
+
+							<xsl:variable name="hour">
+								<xsl:choose>
+									<xsl:when test="substring(date/LST_TIME, 4, 1) = 0">
+										<xsl:value-of select="substring(date/LST_TIME, 1,2)"/>
+									</xsl:when>
+									<xsl:otherwise>
+											<xsl:value-of select="substring(date/LST_TIME, 1,1)"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:variable>
 							<text x="{$x}" y="{$offset - 2}">
-								<xsl:value-of select="date/LST_TIME"/>
+								<xsl:value-of select="$hour"/>
 							</text>
 							<text x="{$x}" y="{($y+$rectHeight)+ 15}">
 								<xsl:value-of select="temperature/T_MAX"/>
@@ -60,6 +71,10 @@
 						</xsl:for-each>
 					</g>
 				</svg>
+				<p>
+					Temperaturdaten vom 1.1.2018 aus Bowling Green, Kentucky<br/>
+					stündliche Messwerte
+				</p>
 			</body>
 		</html>
 	</xsl:template>
